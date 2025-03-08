@@ -1,0 +1,54 @@
+<div class="container">
+    <!-- İlk Ürün -->
+    <div class="product">
+        <img src="1.png" alt="Ürün Resmi">
+        <div class="product-info">
+            <h2>Kuş Atomu</h2>
+            <p class="product-price">Fiyat: 100₺</p>
+        </div>
+        <button class="buy-btn" onclick="showPaymentForm()">Satın Al</button>
+    </div>
+
+    <!-- İkinci Ürün -->
+    <div class="product">
+        <img src="2.png" alt="Ürün Resmi">
+        <div class="product-info">
+            <h2>Atom Karışımı</h2>
+            <p class="product-price">Fiyat: 150₺</p>
+        </div>
+        <button class="buy-btn" onclick="showPaymentForm()">Satın Al</button>
+    </div>
+
+    <!-- Üçüncü Ürün -->
+    <div class="product">
+        <img src="3.png" alt="Ürün Resmi">
+        <div class="product-info">
+            <h2>Yıldız Tozu</h2>
+            <p class="product-price">Fiyat: 200₺</p>
+        </div>
+        <button class="buy-btn" onclick="showPaymentForm()">Satın Al</button>
+    </div>
+
+    <div class="fake-payment" id="paymentForm">
+        <h3>Ödeme Bilgileri</h3>
+        <form onsubmit="processPayment(event)">
+            <label>
+                Kart Numarası:
+                <input type="text" placeholder="1234 5678 9012 3456" required>
+            </label>
+            <br><br>
+            <label>
+                Son Kullanma Tarihi:
+                <input type="text" placeholder="MM/YY" required>
+            </label>
+            <br><br>
+            <label>
+                CVV:
+                <input type="text" placeholder="123" required>
+            </label>
+            <br><br>
+            <button type="submit">Ödemeyi Tamamla</button>
+        </form>
+        <p class="payment-success" id="successMessage"></p>
+    </div>
+</div>
